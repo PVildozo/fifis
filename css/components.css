@@ -1,0 +1,15 @@
+figure img,
+figure video {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-normal), border-color var(--transition-normal);
+}
+
+figure img:hover,
+figure video:hover {
+    transform: scale(1.015);
+    border-color: var(--color-gold-warm);
+}

@@ -1,0 +1,41 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+    color-scheme: dark light;
+}
+body{
+    font-family: var(--font-body);
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    line-height: 1.7;
+    overflow-x: hidden;
+    transition: background-color var(--transition-normal), color var(--transition-normal) ;
+
+}
+.contenedor-inferior {
+    display: flex;
+    flex-direction: row;
+    flex: 1; /* Hace que ocupe el resto de la altura de la pantalla */
+}
+.barra-Izquierda{
+    position:sticky ;
+    width: 280px;
+    background-color: #d8439b; /* Color rosado de tu menú */
+    color: white;
+    padding: 20px;
+}
+.barra-Izquierda h1 {
+    font-size: 1.2rem;
+    border-bottom: 2px solid #dfe4e9;
+    padding-bottom: 5px;
+}
+.contenedor-principal{
+    flex: 1;
+    background-color: #fce4ff;
+    padding: 20px;
+}
