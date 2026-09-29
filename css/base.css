@@ -15,6 +15,7 @@ body{
     line-height: 1.7;
     overflow-x: hidden;
     transition: background-color var(--transition-normal), color var(--transition-normal) ;
+    
 
 }
 .contenedor-inferior {
@@ -38,4 +39,10 @@ body{
     flex: 1;
     background-color: #fce4ff;
     padding: 20px;
+}
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--color-divider) 50%, transparent 100%);
+  margin:  10px;
 }

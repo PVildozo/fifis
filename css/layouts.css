@@ -6,7 +6,6 @@ header[role="banner"]{
     align-items: center;
 }
 .header-top{
-    display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
@@ -61,8 +60,6 @@ section:hover{
     box-shadow:0 2px 5px rgba(0,0,0,0.05) ;
 }
 .producto img {
-    
-    
     object-fit: cover;
     border-radius: 6px;
 }
