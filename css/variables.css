@@ -1,52 +1,67 @@
 :root {
-  /* ==========================================
-     PALETA DE COLORES (Mileia Cosmetics)
+   /* ==========================================
+   PALETA DE COLORES (Mileia Cosmetics)
      ========================================== */
   /* Fondos principales */
-  --bg-body: #e4bef3;          /* Lila pastel claro (fondo principal) */
-  --bg-surface: #fdf5e6;       /* Lila aún más claro para tarjetas e inputs */
-  --bg-card: #d8b0f8;          /* Lila medio para contenedores destacados */
-  --bg-header: rgb(243, 198, 255);
-  
+   --bg-body: #db9fc4;          /* Lila pastel claro (fondo principal) */
+   --bg-section: #fdf5e6;       /* Lila aún más claro para tarjetas e inputs */
+   --bg-card: #d8b0f8;          /* Lila medio para contenedores destacados */
+   --bg-header: rgb(243, 198, 255);
+   --bg-right: #ce97a4;
+   --border-color: rgba(81, 31, 128, 0.3); /* Borde violeta suave para secciones y tarjetas */
+
   /* Colores de Marca */
-  --color-cream: #fffdf2;       /* Crema / Marfil (relleno de 'mileia' y 'cosmetics') */
-  --color-primary: #b881e9;     /* Violeta medio (trazo/borde y sombra de letras) */
-  --color-primary-dark: #8c4cc7;/* Violeta oscuro para estados :hover o contraste */
-  --color-sparkle: #ffffff;     /* Blanco brillante para destellos y luces */
+   --color-cream: #fffdf2;       /* Crema / Marfil (relleno de 'mileia' y 'cosmetics') */
+   --color-primary: #b881e9;     /* Violeta medio (trazo/borde y sombra de letras) */
+   --color-primary-dark: #8c4cc7;/* Violeta oscuro para estados :hover o contraste */
+   --color-sparkle: #ffffff;     /* Blanco brillante para destellos y luces */
 
   /* Textos */
-  --text-main: #4a216d;        /* Morado profundo (para lectura sobre fondo claro) */
-  --text-light: #fffdf2;       /* Crema claro (para botones y textos sobre morado) */
-  --text-muted: #9c6ccb;       /* Violeta suave para leyendas o descripciones */
+   --text-main: #4a216d;        /* Morado profundo (para lectura sobre fondo claro) */
+   --text-light: #fffdf2;       /* Crema claro (para botones y textos sobre morado) */
+   --text-muted: #9c6ccb; 
+   --text-pink: #cf99da;        /* Rosa vibrante (para enlaces y acentos) */
 
-  /* ==========================================
-     TIPOGRAFÍA (Estilo Cute / Bubbly)
+   /* ==========================================
+      TIPOGRAFÍA (Estilo Cute / Bubbly)
      ========================================== */
-  --font-title: 'Fredoka', 'Comfortaa', 'Bubblegum Sans', cursive, sans-serif;
-  --font-body: 'Quicksand', 'Nunito', sans-serif;
+   --font-title: 'Fredoka', 'Comfortaa', 'Bubblegum Sans', cursive, sans-serif;
+   --font-body: 'Quicksand', 'Nunito', sans-serif;
+     --color-divider: #8c1b66;           /* Líneas divisorias (<hr>) */
+   /*
+   Selecciones
+   */
+   --selection-bg: rgb(146, 33, 211) ;
+   --selection-text: rgb(255, 235, 235);
+   --border-focus: #e039e6;            /* Enfoque Carmesí */
 
-  /* ==========================================
-     BORDES Y REDONDEO (Efecto redondeado)
-     ========================================== */
-  --radius-sm: 12px;
-  --radius-md: 20px;
-  --radius-lg: 32px;
-  --radius-full: 9999px;        /* Para botones ovalados tipo cápsula */
 
-  /* ==========================================
-     SOMBRAS Y EFECTOS "STICKER 3D"
-     ========================================== */
-  /* Sombra sólida inferior tipo pegatina/burbuja */
-  --shadow-sticker: 0px 6px 0px var(--color-primary);
-  --shadow-sticker-hover: 0px 3px 0px var(--color-primary);
-  
-  /* Resplandor suave para tarjetas y destellos */
-  --shadow-glow: 0 0 15px rgba(255, 253, 242, 0.7);
-  --shadow-soft: 0 10px 30px rgba(140, 76, 199, 0.15);
 
-  /* ==========================================
-     TRANSICIONES
+   --scrollbar-track: #6e2f69;         /* Carril del scroll */
+   --scrollbar-thumb: #c712eb;         /* Barra del scroll */
+   --scrollbar-thumb-hover: #ede2f5;   /* Scroll al pasar el cursor */
+   --scrollbar-thumb-active: #ede2f5;  /* Scroll al arrastrar */
+   --space-xs: 0.25rem;
+   --space-sm: 0.5rem;
+   --space-md: 1rem;
+   --space-lg: 1.5rem;
+   --space-xl: 2.5rem;
+   --space-2xl: 4rem;
+
+   --radius-sm: 4px;
+   --radius-md: 10px;
+   --radius-lg: 18px;
+   --radius-full: 9999px;
+
+   --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+   --transition-normal: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+   --transition-bounce: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+   /**/
+   /* ==========================================
+      ESPACIADO Y DIMENSIONES
      ========================================== */
-  --transition-bounce: 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);
-  --transition-fast: 0.2s ease;
-}
+   --shadow-md: 0 8px 24px rgba(90, 15, 119, 0.6);
+
+
+}  

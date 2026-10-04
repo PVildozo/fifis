@@ -15,34 +15,63 @@ body{
     line-height: 1.7;
     overflow-x: hidden;
     transition: background-color var(--transition-normal), color var(--transition-normal) ;
-    
-
 }
 .contenedor-inferior {
     display: flex;
     flex-direction: row;
-    flex: 1; /* Hace que ocupe el resto de la altura de la pantalla */
+    min-height: calc(100vh - 80px); /* Ajusta según la altura de tu header */
 }
 .barra-Izquierda{
     position:sticky ;
+    top: 80px;
     width: 280px;
-    background-color: #d8439b; /* Color rosado de tu menú */
-    color: white;
+    background-color: var(--bg-right); /* Color rosado de tu menú */
+    border-radius: var(--radius-md);
+    color: var(--text-light);
     padding: 20px;
+    overflow-y: auto; /* Permite desplazamiento vertical si el contenido es demasiado largo */
+    height: calc(100vh - 80px); 
 }
 .barra-Izquierda h1 {
     font-size: 1.2rem;
-    border-bottom: 2px solid #dfe4e9;
+    border-bottom: 2px solid var(--color-sparkle);
     padding-bottom: 5px;
 }
 .contenedor-principal{
     flex: 1;
-    background-color: #fce4ff;
     padding: 20px;
+    min-width: 0; /* Evita que el contenido se desborde */
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: var(--radius-full);
+    border: 2px solid var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: var(--scrollbar-thumb-active);
+}
+
+::selection {
+    background-color: var(--selection-bg);
+    color: var(--selection-text);
 }
 hr {
-  border: none;
-  height: 1px;
-  background: linear-gradient(90deg, transparent 0%, var(--color-divider) 50%, transparent 100%);
-  margin:  10px;
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, var(--color-divider) 50%, transparent 100%);
+    margin:  10px;
 }
